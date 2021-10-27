@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Data Penjualan</title>
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-dark bg-primary">
+        <span class="navbar-brand mb-0 h1">Data Penjualan</span>
+    </nav>
+</header>
+<main class="container">
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="card-title">Input Barang</h5>
+                </div>
+                <div class="card-body">
+                    <div class="form-group">
+                        <label for="inputTypeId">ID Jenis Barang</label>
+                        <input id="inputTypeId" type="number" class="form-control" placeholder="ID Jenis Barang">
+                    </div>
+                    <div class="form-group">
+                        <label for="inputItemName">Nama Barang</label>
+                        <input id="inputItemName" type="text" class="form-control" placeholder="Nama Barang">
+                    </div>
+                    <div class="form-group">
+                        <label for="inputItemQty">Stok</label>
+                        <input id="inputItemQty" type="text" class="form-control" placeholder="Stok Barang">
+                    </div>
+                    <div class="form-group">
+                        <button id="buttonSave" class="btn btn-success">Save</button>
+                        <button id="buttonUpdate" class="btn btn-primary">Update</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--<div id="listItem" class="row"></div>-->
+
+    <div class="row table-responsive">
+        <table class="table" id="ajuanTable">
+            <thead>
+                <tr>
+                    <th scope="col">ID Barang</th>
+                    <th scope="col">Nama Barang</th>
+                    <th scope="col">Stok</th>
+                    <th scope="col">Tanggal Transaksi</th>
+                    <th scope="col">ID Jenis Barang</th>
+                    <th scope="col">Aksi</th>
+                </tr>
+            </thead>
+            <tbody id="listItem">
+                
+            </tbody>
+        </table>
+    </div>
+<br>
+<br>
+    <div class="row">
+        <div class="col-lg-10">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" id="cari" name="cari" placeholder="Cari Data">
+                <button class="btn btn-warning" type="button" id="btnCari">Search</button>
+            </div>
+        </div>
+    </div>
+
+    <!--Data Transaksi-->
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="card-title">Input Transaksi</h5>
+                </div>
+                <div class="card-body">
+                    <div class="form-group">
+                        <label for="inputItemId">ID Barang</label>
+                        <input id="inputItemId" type="number" class="form-control" placeholder="ID Barang">
+                    </div>
+                    <div class="form-group">
+                        <label for="inputItemSold">Jumlah Beli</label>
+                        <input id="inputItemSold" type="text" class="form-control" placeholder="Jumlah Beli">
+                    </div>
+                    <div class="form-group">
+                        <button id="buttonSaveTrx" class="btn btn-success">Beli</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="row table-responsive">
+        <table class="table" >
+            <thead>
+                <tr>
+                    <th scope="col">ID Trx</th>
+                    <th scope="col">Nama Barang</th>
+                    <th scope="col">Stok</th>
+                    <th scope="col">Jumlah Terjual</th>
+                    <th scope="col">Jenis Barang</th>
+                </tr>
+            </thead>
+            <tbody id="listTrx">
+                
+            </tbody>
+        </table>
+    </div>
+
+</main>
+</body>
+</html>
